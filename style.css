@@ -1,8 +1,15 @@
+@font-face{
+    font-family:"Comfortaa";
+    font-style:"normal";
+    font-weight:300;
+    src: url(font/1Pt_g8LJRfWJmhDAuUsSQamb1W0lwk4S4TbMPrQ.ttf) format("trueType");
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: --;
+    font-family: Comfortaa;
     font-size: 32px;
 }
 
@@ -17,6 +24,23 @@ body {
 ul {
     position: relative;
     transform: skewY(-375deg);
+}
+
+ul.second{
+    position: relative;
+    left: 15vh;
+    transform: SkewY(-15);
+}
+
+ul li img {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    left: -30px;
+    width: 25px;
+    height: 70%;
+    transform-origin: right;
+    transform: skewY(45deg);
 }
 
 ul li {
